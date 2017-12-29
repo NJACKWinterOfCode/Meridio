@@ -42,4 +42,86 @@ Thats about it all to get you started with meridio,the free file hosting social 
 ### Libraries Used
 1. Bootstrap<br>
 2. Typed.js and animate.css for animations<br>
-### Work still in progress...
+### How to contribute?
+#### Cloning the repo
+* Go to the repository you want to clone and click on fork.
+* Copy the URL from your forked repo by going to the 'Clone and Download' option.
+* Run git/terminal and execute the follwing to clone the repository to your local machine and navigate to the project folder
+ ```sh
+ $ git clone <THE COPIED URL>
+ $ cd <PATH TO THE PROJECT>
+ ```
+ #### Adding ,Deleting and Editing files
+ * Make the necessary changes to project folder. You can add files to the directory and can also edit/delete existing files.
+ * Add the files edited/added using the add command
+ ```sh
+ $ git add <Name of file added/edited>
+ ```
+ * You can also add all files in a single go by using
+ ```sh
+ $ git add .
+ ``` 
+ * You can verify that your files will be added when you commit by checking the status of the current stage
+ ```sh
+ $ git status
+ ```
+ * We are ready to commit. Note that the commit action only commits to your local repository.
+ ```sh
+ $ git commit -m "MESSAGE you want"
+ ```
+ * Now we are ready to push
+```sh
+ $ git push <Remote Repositor eg. Origin> <BRANCH eg. master>
+ ```
+ 
+ #### Creating a pull request
+ * On GitHub, navigate to the main page of the repository.
+ * To the right of the Branch menu, click New pull request.
+ * On the next page, click compare across forks.
+ * Type a title and description for your pull request.
+ * Click Create pull request.<br>
+   Now you are done.Happy Contribution!!!
+### Installation guide
+#### Cloning the repo
+* Run git/terminal and execute the follwing to clone the repository to your local machine and navigate to the project folder
+ ```sh
+ $ git clone https://github.com/NJACKWinterOfCode/Meridio.git
+ $ cd Meridio
+ ```
+ #### Installing and activating virtual environment
+* Install local environment on your local machine by typing the following in terminal/command prompt
+ ```sh
+ $ pip install virtualenv
+ ```
+ ###### Activation of virtual environment on Windows
+ * In command prompt type the following to activate the virtual environment
+```sh
+ $ mkvirtualenv my_project
+ ```
+ * If you restart the command prompt to run virtual environment again type
+```sh
+ $ workon my_project
+ ```
+ ###### Activation of virtual environment on linux/Mac
+ * Create a virtual environment for a project
+ ```sh
+ $ cd my_project_folder
+ $ virtualenv my_project
+ ```
+ * To begin the virtual environment activate it using the following command
+ ```sh
+ $ source my_project/bin/activate
+ ```
+#### Install Dependencies
+* To install files required to run the project execute the following command
+ ```sh
+$ pip install -r requirements.txt 
+ ```
+#### Run the project
+* To run the project finally type
+ ```sh
+$ python manage.py runserver
+ ```
+ You are done.Cheers!!!
+
+ 
